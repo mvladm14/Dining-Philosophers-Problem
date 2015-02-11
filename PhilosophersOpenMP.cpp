@@ -15,8 +15,6 @@
 
 omp_lock_t writelock[NO_CHOPS];
 
-int chops[NO_PHILO] = { 0 };
-
 void think(int i)
 {
 	printf("philosopher %d is thinking...\n", i);
