@@ -73,7 +73,7 @@ int  main()
 		omp_init_lock(&writelock[i]);
 	}	
 
-	#pragma omp parallel for private(i) shared (chops)
+	#pragma omp parallel for private(i)
 	for (i = 0; i < NO_PHILO; i++)
 	{
 		philosophize(i);
